@@ -1,0 +1,92 @@
+/* System 7 TUI Stylesheet */
+
+Screen {
+    background: $primary;
+    color: $text;
+}
+
+/* Panel/Window background */
+$panel: #c0c0c0;
+$panel-dark: #808080;
+$panel-light: #ffffff;
+
+/* System 7 colors */
+$system7-blue: #000080;
+$system7-beige: #c0c0c0;
+$system7-white: #ffffff;
+$system7-black: #000000;
+
+/* Window styling */
+.window-title {
+    background: $system7-blue;
+    color: white;
+    border: solid #000080;
+    padding: 0 1;
+    text-align: center;
+    text-style: bold;
+}
+
+.window-content {
+    background: $system7-beige;
+    border: solid $panel-dark;
+}
+
+/* Button styling */
+button {
+    background: $system7-beige;
+    color: $system7-black;
+    border: solid $panel-dark;
+    padding: 0 2;
+    text-align: center;
+}
+
+button:hover {
+    background: $panel-light;
+    text-style: bold;
+}
+
+button:focus {
+    background: $system7-blue;
+    color: white;
+}
+
+/* Menu bar */
+.menu-bar {
+    background: $system7-beige;
+    color: $system7-black;
+    border-bottom: solid $panel-dark;
+    text-style: bold;
+}
+
+/* Status bar */
+.status-bar {
+    background: $system7-beige;
+    color: $system7-black;
+    border-top: solid $panel-dark;
+    text-align: right;
+}
+
+/* Input fields */
+input {
+    background: white;
+    color: black;
+    border: inset $panel-dark;
+    padding: 0 1;
+}
+
+input:focus {
+    background: white;
+    border: inset $system7-blue;
+}
+
+/* Dialog boxes */
+.dialog {
+    background: $system7-beige;
+    border: solid $panel-dark;
+    padding: 1 2;
+}
+
+.dialog-title {
+    text-style: bold;
+    padding: 1 0;
+}
